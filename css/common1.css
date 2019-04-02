@@ -1,0 +1,83 @@
+body {
+    background-color: #f7f7f7 !important;
+    cursor: pointer;
+}
+*,a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+img,button ,input {
+    border: none;
+}
+img {
+	vertical-align: top;
+}
+em, i, u {
+    font-style: normal;
+}
+s {
+    text-decoration: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 清除浮动公共类 */
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+body {
+    font: 12px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #f3f5f7;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #c81623;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 单行文本超出省略号显示 */
+.txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.m-color {
+    color: #c81623;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mt-50{
+    margin-top: 30px;
+}
+.mt-100{
+    margin-top: 100px;
+}

@@ -1,0 +1,100 @@
+body {
+    background-color: #f0f4f5 !important;
+}
+a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+img,button ,input {
+    border: none;
+    outline: none;
+}
+img {
+	vertical-align: top;
+}
+em, i, u {
+    font-style: normal;
+}
+s {
+    text-decoration: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 清除浮动公共类 */
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+body {
+    font: 12px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+    background: #f3f5f7;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #c81623;
+}
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 单行文本超出省略号显示 */
+.txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.fz30{
+    font-size: 30px;
+}
+.fz18{
+    font-size: 18px;
+}
+
+
+
+.big{
+    cursor: pointer; 
+    transition: all 0.5s; 
+
+    box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0px 60px rgba(0,0,0,0.1) inset;
+    -webkit-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0px 60px rgba(0,0,0,0.1) inset;
+    -moz-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0px 60px rgba(0,0,0,0.1) inset;
+    -o-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0px 60px rgba(0,0,0,0.1) inset;
+    -ms-box-shadow:0 1px 4px rgba(0,0,0,0.3),0 0px 60px rgba(0,0,0,0.1) inset;
+}
+
+.big:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 15px #c81623;
+}
+
+.light{
+    opacity: 0.5;
+    transition: all 0.5s; 
+    cursor: pointer;
+}
+.light:hover{
+    opacity: 1;
+    color: #fff;
+}

@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>站酷海洛 | 航拍 - 视频精选 - 站酷海洛正版图片, 视频, 音乐素材交易平台 - Shutterstock中国独家合作伙伴 - 站酷旗下品牌</title>
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .section {
+            position: relative;
+            width: 100%;
+            height: 660px;
+            overflow: hidden;
+        }
+
+        .section .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .section1 .text {
+            width: 100%;
+            height: 100%;
+            background: rgba(26, 40, 131, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            line-height: 660px;
+            z-index: 10;
+        }
+
+        .section1 .text img {
+            /*width: 487px;*/
+            height: 55%;
+            opacity: 1;
+            vertical-align: middle;
+            position: absolute;
+            top:25%;
+            left:50%;
+            /*transform: translateY(-50%);*/
+            transform: translateX(-50%);
+        }
+
+        .downside .picture .swiper-container .swiper-wrapper .swiper-slide {
+            width: 212px;
+            margin-right: 30px;
+        }
+
+        .section2 .text, .section3 .text, .section4 .text, .section5 .text, .section6 .text {
+            width: 84%;
+            height: 190px;
+            margin: 0 8%;
+            position: absolute;
+            top: 50px;
+            left: 0;
+        }
+
+        .section2 .text .blogo, .section4 .text .blogo, .section6 .text .blogo {
+            width: 123px;
+            float: right;
+        }
+
+        .section3 .text .blogo, .section5 .text .blogo {
+            width: 123px;
+            float: left;
+        }
+
+        .section2 .text .iconImg, .section4 .text .iconImg, .section6 .text .iconImg {
+            float: left;
+        }
+
+        .section3 .text .iconImg, .section5 .text .iconImg {
+            float: right;
+        }
+
+        .section2 .text .iconImg {
+            width: 187px;
+        }
+
+        .section3 .text .iconImg {
+            width: 217px;
+        }
+
+        .section4 .text .iconImg {
+            width: 264px;
+        }
+
+        .section5 .text .iconImg {
+            width: 302px;
+        }
+
+        .section6 .text .iconImg {
+            width: 342px;
+        }
+
+        .section .downside {
+            width: 100%;
+            height: 178px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            transition: ease all 1s;
+        }
+
+        .section .downside .downT {
+            height: 66px;
+            width: 157px;
+            background: url("img/hp/down.png");
+            background-size: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -66px;
+        }
+
+        .section .downside .downT span {
+            position: absolute;
+            left: 42%;
+            top: 16px;
+            transition: ease all 0.5s;
+        }
+
+        .section .downside .downT span img {
+            width: 29px;
+            /*animation: updown 0.7s linear infinite;*/
+        }
+
+        /*@-webkit-keyframes updown {*/
+        /*25% {*/
+        /*-webkit-transform: translateY(5px);*/
+        /*}*/
+        /*50%, 100% {*/
+        /*-webkit-transform: translateY(0);*/
+        /*}*/
+        /*75% {*/
+        /*-webkit-transform: translateY(-5px);*/
+        /*}*/
+        /*}*/
+
+        /*@keyframes updown {*/
+        /*25% {*/
+        /*transform: translateY(5px);*/
+        /*}*/
+        /*50%, 100% {*/
+        /*transform: translateY(0);*/
+        /*}*/
+        /*75% {*/
+        /*transform: translateY(-5px);*/
+        /*}*/
+        /*}*/
+
+        .section.close .downside {
+            transform: translateY(175px);
+        }
+
+        .section.close .downside .picture a.gomore {
+            display: none;
+        }
+
+        .section.close .downT span {
+            transform: rotate(180deg);
+        }
+
+        .section.close .downT img {
+            animation: updown 0.7s linear infinite;
+        }
+
+        @keyframes updown {
+            0% {
+                transform: translateY(0px);
+            }
+            25% {
+                transform: translateY(-5px);
+            }
+            50% {
+                transform: translateY(0px);
+            }
+            75% {
+                transform: translateY(5px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .section .downside .picture {
+            height: 178px;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 7%;
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .section .downside .picture .swiper-button-prev, .section .downside .picture .swiper-button-next {
+            height: 35px;
+            width: 35px;
+            position: absolute;
+        }
+
+        .section .downside .picture .swiper-button-prev {
+            top: 50%;
+            left: 3%;
+            transform: translateY(-50%);
+        }
+
+        .section .downside .picture .swiper-button-next {
+            top: 50%;
+            right: 3%;
+            transform: translateY(-50%);
+        }
+
+        .section .downside .picture .swiper-button-prev span, .section .downside .picture .swiper-button-next span {
+            height: 28px;
+            width: 28px;
+            display: block;
+            border: 1px #ffffff solid;
+            border-radius: 14px;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        .section .downside .picture .swiper-button-prev span img, .section .downside .picture .swiper-button-next span img {
+            width: 10px;
+            vertical-align: middle;
+        }
+
+        .section .downside .picture .gomore {
+            display: block;
+            width: 116px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #ea4335;
+            font-size: 14px;
+            position: absolute;
+            top: -16px;
+            right: 10%;
+            z-index: 10;
+        }
+
+        .section .downside .picture .gomore:hover{
+            background-color: #f1786e;
+            transition: .5s;
+        }
+
+        .section .downside .picture .swiper-container {
+            width: 100%;
+            height: 178px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section .downside .picture .swiper-container .swiper-wrapper {
+            position: absolute;
+            height: 100%;
+            width: 3600px;
+            z-index: 1;
+        }
+
+        .section .downside .picture .swiper-container .swiper-wrapper .swiper-slide {
+            width: 209px;
+            height: 115px;
+            margin-right: 30px;
+            float: left;
+            margin-top: 31px;
+        }
+
+        .section .downside .picture .swiper-container .swiper-wrapper .swiper-slide img {
+            width: 209px;
+            height: 115px;
+        }
+
+        .section .downside .picture .swiper-container .swiper-wrapper .swiper-slide .view {
+            position: relative;
+            display: block;
+            height: 115px;
+        }
+
+        .biankuang {
+            width: 3px;
+            height: 3px;
+            position: absolute;
+            z-index: 99;
+            border-radius: 10px;
+        }
+
+        .biankuang_1 {
+            height: 0;
+            top: 0;
+            left: 0;
+            /*border-left: 3px solid #EB5858;*/
+            width: 3px;
+            background: -webkit-linear-gradient(#f3245d,#a178d0);
+            background: -o-linear-gradient(#f3245d,#a178d0);
+            background: -moz-linear-gradient(#f3245d,#a178d0);
+            background: linear-gradient(#f3245d,#a178d0);
+        }
+
+        .biankuang_2 {
+            width: 0;
+            bottom: -3px;
+            left: 0;
+            /*border-top: 3px solid #EB5858;*/
+            height: 3px;
+            background: -webkit-linear-gradient(left,#e95f7a,#ffd100);
+            background: -o-linear-gradient(left,#e95f7a,#ffd100);
+            background: -moz-linear-gradient(left,#e95f7a,#ffd100);
+            background: linear-gradient(to right,#e95f7a,#ffd100);
+        }
+
+        .biankuang_3 {
+            height: 0;
+            bottom: 0;
+            right: 0;
+            /*border-right: 3px solid #EB5858;*/
+            width: 3px;
+            background: -webkit-linear-gradient(#a178d0,#f3245d);
+            background: -o-linear-gradient(#a178d0,#f3245d);
+            background: -moz-linear-gradient(#a178d0,#f3245d);
+            background: linear-gradient(#a178d0,#f3245d);
+        }
+
+        .biankuang_4 {
+            width: 0;
+            top: -3px;
+            right: 0;
+            /*border-bottom: 3px solid #EB5858;*/
+            height: 3px;
+            background: -webkit-linear-gradient(left,#ffd100,#e95f7a);
+            background: -o-linear-gradient(left,#ffd100,#e95f7a);
+            background: -moz-linear-gradient(left,#ffd100,#e95f7a);
+            background: linear-gradient(to right,#ffd100,#e95f7a);
+        }
+    </style>
+</head>
+<body>
+<div id="action">
+    <div class="section section1">
+        <div class="video">
+            <video src="img/hp/video.mp4" autoplay loop muted></video>
+        </div>
+        <div class="text"><img src="img/hp/icon-section1.png" alt=""></div>
+    </div>
+    <div class="section section2">
+        <div class="video">
+            <video src="img/hp/video2.mp4" autoplay loop muted></video>
+        </div>
+        <div class="text">
+            <img src="img/hp/icon-section2.png" alt="" class="iconImg">
+            <img src="img/hp/blogo.png" alt="" class="blogo">
+        </div>
+        <div class="downside">
+            <div class="downT">
+                <span class="aimate-bounce-up"><img src="img/hp/d.png" alt=""></span>
+            </div>
+            <div class="picture clear">
+                <a href="javascript:void(0)" class="swiper-button-prev">
+                    <span><img src="img/hp/l.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" class="swiper-button-next">
+                    <span><img src="img/hp/r.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" target="_blank" class="gomore">
+                    <span>更多同类素材</span>
+                </a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section2-7.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section3">
+        <div class="video">
+            <video src="img/hp/video3.mp4" autoplay loop muted></video>
+        </div>
+        <div class="text">
+            <img src="img/hp/icon-section3.png" alt="" class="iconImg">
+            <img src="img/hp/blogo.png" alt="" class="blogo">
+        </div>
+        <div class="downside">
+            <div class="downT">
+                <span><img src="img/hp/d.png" alt=""></span>
+            </div>
+            <div class="picture clear">
+                <a href="javascript:void(0)" class="swiper-button-prev">
+                    <span><img src="img/hp/l.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" class="swiper-button-next">
+                    <span><img src="img/hp/r.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" target="_blank" class="gomore">
+                    <span>更多同类素材</span>
+                </a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section3-7.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section4">
+        <div class="video">
+            <video src="img/hp/video4.mp4" autoplay loop muted></video>
+        </div>
+        <div class="text">
+            <img src="img/hp/icon-section4.png" alt="" class="iconImg">
+            <img src="img/hp/blogo.png" alt="" class="blogo">
+        </div>
+        <div class="downside">
+            <div class="downT">
+                <span><img src="img/hp/d.png" alt=""></span>
+            </div>
+            <div class="picture clear">
+                <a href="javascript:void(0)" class="swiper-button-prev">
+                    <span><img src="img/hp/l.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" class="swiper-button-next">
+                    <span><img src="img/hp/r.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" target="_blank" class="gomore">
+                    <span>更多同类素材</span>
+                </a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-8.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section4-7.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section5">
+        <div class="video">
+            <video src="img/hp/video5.mp4" autoplay loop muted></video>
+        </div>
+        <div class="text">
+            <img src="img/hp/icon-section5.png" alt="" class="iconImg">
+            <img src="img/hp/blogo.png" alt="" class="blogo">
+        </div>
+        <div class="downside">
+            <div class="downT">
+                <span><img src="img/hp/d.png" alt=""></span>
+            </div>
+            <div class="picture clear">
+                <a href="javascript:void(0)" class="swiper-button-prev">
+                    <span><img src="img/hp/l.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" class="swiper-button-next">
+                    <span><img src="img/hp/r.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" target="_blank" class="gomore">
+                    <span>更多同类素材</span>
+                </a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        <a target="_blank" href="javascript:void(0)" class="view">
+                            <div class="biankuang biankuang_1"></div>
+                            <div class="biankuang biankuang_2"></div>
+                            <div class="biankuang biankuang_3"></div>
+                            <div class="biankuang biankuang_4"></div>
+                            <img src="img/hp/section5-1.jpg" alt="">
+                        </a>
+                    </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section5-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section6">
+        <div class="video">
+            <video src="img/hp/video6.mp4" autoplay loop muted></video>
+        </div>
+        <div class="text">
+            <img src="img/hp/icon-section6.png" alt="" class="iconImg">
+            <img src="img/hp/blogo.png" alt="" class="blogo">
+        </div>
+        <div class="downside">
+            <div class="downT">
+                <span><img src="img/hp/d.png" alt=""></span>
+            </div>
+            <div class="picture clear">
+                <a href="javascript:void(0)" class="swiper-button-prev">
+                    <span><img src="img/hp/l.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" class="swiper-button-next">
+                    <span><img src="img/hp/r.png" alt=""></span>
+                </a>
+                <a href="javascript:void(0)" target="_blank" class="gomore">
+                    <span>更多同类素材</span>
+                </a>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-7.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-2.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-4.jpg" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-6.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="javascript:void(0)" class="view">
+                                <div class="biankuang biankuang_1"></div>
+                                <div class="biankuang biankuang_2"></div>
+                                <div class="biankuang biankuang_3"></div>
+                                <div class="biankuang biankuang_4"></div>
+                                <img src="img/hp/section6-7.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script>
+    $(function () {
+        var w = (document.documentElement.clientWidth||document.body.clientWidth)+17 ;//可见区域宽度
+        $('.section video').attr({'width':w});
+//        var swiperSlide = $('.section2 .swiper-wrapper');
+//        var num = 0;
+//        $('.section2 .swiper-button-prev').click(function () {
+//            if (swiperSlide[0].offsetLeft == 0) {
+//                num = -1912;
+//            }
+//            swiperSlide.css('left', num += 239);
+//        });
+//        $('.section2 .swiper-button-next').click(function () {
+//            if (swiperSlide[0].offsetLeft == -2151) {
+//                num = 0;
+//            }
+//            swiperSlide.css('left', num -= 239);
+//        });
+        lunBo($('.section2 .swiper-button-prev'),
+                $('.section2 .swiper-button-next'),
+                $('.section2 .swiper-wrapper'),8);
+        lunBo($('.section3 .swiper-button-prev'),
+                $('.section3 .swiper-button-next'),
+                $('.section3 .swiper-wrapper'),8);
+        lunBo($('.section4 .swiper-button-prev'),
+                $('.section4 .swiper-button-next'),
+                $('.section4 .swiper-wrapper'),8);
+        lunBo($('.section5 .swiper-button-prev'),
+                $('.section5 .swiper-button-next'),
+                $('.section5 .swiper-wrapper'),6);
+        lunBo($('.section6 .swiper-button-prev'),
+                $('.section6 .swiper-button-next'),
+                $('.section6 .swiper-wrapper'),7);
+        function lunBo(prev,next,swiperSlide,n){
+            var num = 0;
+            prev.click(function () {
+                swiperSlide.css('left',num);
+                if (swiperSlide[0].offsetLeft == 0) {
+                    num = -239*n;
+                    swiperSlide.css('left',num);
+                }
+                num+=239;
+                swiperSlide.stop(true).animate({left:num},500);
+            });
+            next.click(function () {
+                swiperSlide.css('left',num);
+                if (swiperSlide[0].offsetLeft == -239*n) {
+                    num = 0;
+                    swiperSlide.css('left',num);
+                }
+                num-=239;
+                swiperSlide.stop(true).animate({left:num},500);
+            });
+            setInterval(function(){
+                swiperSlide.css('left',num);
+                if (swiperSlide[0].offsetLeft == -239*n) {
+                    num = 0;
+                    swiperSlide.css('left',num);
+                }
+                num-=239;
+                swiperSlide.stop(true).animate({left:num},500);
+            },5000);
+        }
+    });
+</script>
+<script>
+    $(function () {
+        $('#action').fullpage({
+            afterRender: function () {
+                $('.section1 video')[0].play()
+            },
+            afterLoad: function (anchorLink, index) {
+                $('.section').each(function () {
+                    $(this).find("video")[0].pause();
+                });
+                $('.section' + index + ' video')[0].play();
+                $('.section').removeClass("close");
+                $('.section' + index).addClass("close");
+            }
+        });
+        $(".downside").mouseover(function () {
+            $(this).parents(".section").removeClass("close");
+        });
+//        var sections = document.querySelectorAll('.section');
+//        for (var i = 0; i < sections.length; i++) {
+//            sections[i].index = i;
+//            sections[1].addEventListener('click',function () {
+//                sections[1].removeClass("close");
+//            });
+//            $("body").on('click', function () {
+//                $(".section"+i ).addClass("close");
+//            });
+//        }
+        $("body").on('click', ".section1", function () {
+            $(".section1").addClass("close");
+        });
+        $("body").on('click', ".section2", function () {
+            $(".section2").addClass("close");
+        });
+        $("body").on('click', ".section3", function () {
+            $(".section3").addClass("close");
+        });
+        $("body").on('click', ".section4", function () {
+            $(".section4").addClass("close");
+        });
+        $("body").on('click', ".section5", function () {
+            $(".section5").addClass("close");
+        });
+        $("body").on('click', ".section6", function () {
+            $(".section6").addClass("close");
+        });
+        $(".picture").click(function (event) {
+            event.stopPropagation();
+        });
+        //边框效果--移入
+        //.stop停止正在运行的动画
+        //.delay函数延迟，推迟动画的执行
+        //.animate自定义的动画函数
+        function biankuangShow(obj) {
+            $(obj).find('.biankuang_1').stop(true).animate({
+                height: '115px'
+            }, 300);
+            $(obj).find('.biankuang_2').stop(true).delay(300).animate({
+                width: '209px'
+            }, 300);
+            $(obj).find('.biankuang_3').stop(true).animate({
+                height: '115px'
+            }, 300);
+            $(obj).find('.biankuang_4').stop(true).delay(300).animate({
+                width: '209px'
+            }, 300);
+        }
+
+        //边框效果--移出
+        function biankuangHide(obj) {
+            $(obj).find('.biankuang_1').stop(true).delay(100).animate({
+                height: '0px'
+            }, 100);
+            $(obj).find('.biankuang_2').stop(true).animate({
+                width: '0px'
+            }, 100);
+            $(obj).find('.biankuang_3').stop(true).delay(100).animate({
+                height: '0px'
+            }, 100);
+            $(obj).find('.biankuang_4').stop(true).animate({
+                width: '0px'
+            }, 100);
+        }
+
+        $('.view').hover(
+                function () {
+                    var obj = $(this);
+                    biankuangShow(obj);
+                },
+                function () {
+                    var obj = $(this);
+                    biankuangHide(obj);
+                }
+        );
+        var video2 = $('.section2 .video video')[0];
+        $('.section2 .swiper-slide').click(function(){
+            var i2 = $(this).index();
+            i2>7?i2=i2-8:i2;
+            video2.currentTime=i2*2;
+        });
+        var video3 = $('.section3 .video video')[0];
+        $('.section3 .swiper-slide').click(function(){
+            var i3 = $(this).index();
+            i3>7?i3=i3-8:i3;
+            video3.currentTime=i3*2+1;
+        });
+        var video4 = $('.section4 .video video')[0];
+        $('.section4 .swiper-slide').click(function(){
+            var i4 = $(this).index();
+            i4>7?i4=i4-8:i4;
+            video4.currentTime=i4*2+1;
+        });
+        var video5 = $('.section5 .video video')[0];
+        $('.section5 .swiper-slide').click(function(){
+            var i5 = $(this).index();
+            i5>5?i5=i5-6:i5;
+            video5.currentTime=i5*3.3;
+        });
+        var video6 = $('.section6 .video video')[0];
+        $('.section6 .swiper-slide').click(function(){
+            var i6 = $(this).index();
+            i6>6?i6=i6-7:i6;
+            video6.currentTime=i6*2.1+1;
+        });
+//        $('.section2 .swiper-slide').eq(0).click(function(e){
+//            video2.currentTime=0;
+//            console.log(video2.currentTime);
+//        });
+//        $('.section2 .swiper-slide').eq(1).click(function(e){
+//            video2.currentTime=2;
+//            console.log(video2.currentTime);
+//        });
+    })
+</script>
+</body>
+</html>

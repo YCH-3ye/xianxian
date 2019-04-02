@@ -1,0 +1,701 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+ul,
+ol {
+	list-style: none;
+}
+/* a的简写方式 */
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #f40;
+}
+/* 因为input默认的边框是2像素 所以将它换成1像素 */
+input {
+	border: 1px solid #ccc;
+}
+
+body {
+	font: 14px/1.5 'microsoft yahei';
+   
+}
+img{
+    vertical-align: top;
+}
+
+/*
+	版心公共类
+*/
+.w1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*
+	清除浮动 重点
+*/
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+body{
+    background: rgb(240, 244, 245);
+
+ 
+}
+/* banner部分开始 */
+.nav{
+    width: 100%;
+    /* height: 560px; */
+    color: pink;
+    position: relative;
+    z-index: 1;
+}
+.nav .nav-img{
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+    margin-bottom: 194px;
+    position: relative;  
+}
+.nav .nav-img .info{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    top:125px;
+}
+.nav .nav-img button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:350px;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    color: rgba(255, 255, 255, 0.8);
+    height: 48px;
+    line-height: 40px;
+    background: transparent;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.6);
+    border-image: initial;
+    transition: all 0.3s ease 0s;
+    padding: 0px 24px;
+    outline: 0px !important;
+    z-index: 1;
+}
+.nav .nav-img ul{
+    position: relative;
+}
+
+.nav-img .nav-img-center div.zzz{
+    width: 11205px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.nav .nav-img li.block{
+    display: block!important;
+}
+.nav .nav-img ul li{
+    height: 560px;
+}
+.nav .nav-list{
+    /* width: 1104px; */
+    height: 194px;
+    /* background: pink; */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:490px;
+}
+.nav .nav-list .nav-list-img{
+    position: absolute;
+    left: 95px;
+    top: -70px;
+
+    /* overflow: hidden; */
+}
+
+.nav .nav-list  .nav-list-img .img-hover{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+.nav .nav-list  .nav-list-img .img-hover:nth-child(1){
+    background: url('../img/shouye/未标题-1.png') no-repeat;
+    height: 46px;
+
+}
+.nav .nav-list #sss  .nav-list-img-1 .img-hover:hover{
+    top:20px;
+    height: 46px;
+    cursor: pointer;
+    background: url('../img/shouye/未标题-1.png') no-repeat center center!important;
+    transition: .3s;
+}
+.nav .nav-list #sss  .nav-list-img-2 .img-hover:hover{
+    top:20px;
+    height: 46px;
+    cursor: pointer;
+    background: url('../img/shouye/未标题-2.png') no-repeat center center!important;
+    transition: .3s;
+
+}
+.nav .nav-list #sss .nav-list-img-3 .img-hover:hover  { 
+    top:20px;
+    height: 46px;
+    cursor: pointer;
+    background: url('../img/shouye/未标题-3.png') no-repeat center center!important;
+    transition: .3s;
+
+}
+.nav .nav-list  .nav-list-img div.mouseout{
+    top:20px;
+    height: 46px;
+    cursor: pointer;
+    /* background: url('../img/shouye/未标题-1.png') no-repeat center center; */
+    transition: .3s;
+}
+.nav .nav-list  li{
+    width: 33.33%;
+    height: 194px;
+    float: left;
+    position: relative;
+    padding: 43px;
+    box-sizing: border-box;
+    background: #fff
+}
+.nav .nav-list li h3{
+    position: relative;
+    padding-top: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2.6px;
+    color: rgb(31, 31, 31);
+    background: rgb(255, 255, 255);
+}
+.nav .nav-list li p{
+    color: #000;
+    /* display: block; */
+    line-height: 1.4em;
+    font-size: 16px;
+    color: rgb(102, 102, 102)
+}
+.nav .nav-list  li div{
+    text-align: center;
+    /* padding: 43px; */
+   
+    height: 194px;
+    position: relative;
+    top: 27px;
+    left: 0;
+}
+.nav-list .line::after{
+    content: "";
+    width: 6px;
+    height: 40px;
+    position: absolute;
+    left: 360PX;
+    top:50%;
+    transform: translateY(-50%);
+    background: rgb(240, 244, 245)
+}
+/* banner区域结束 */
+
+/* section区域开始 */
+/* 海洛开始 */
+div.s1{
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+
+}
+.s1 .s2{
+    font-family: 'Franklin Gothic';
+    font-size: 56px;
+    font-weight: 740;
+    letter-spacing: 5px;
+    display: inline-block;
+    line-height: 56px;
+  
+}
+.s1 .s3{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-family: 'Franklin Gothic';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2em;
+    
+}
+.s1::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+   margin-right: 8px;
+   margin-bottom: 17px;
+}
+.s1::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #000;
+    margin-left: 8px;
+    margin-bottom: 17px;
+}
+/* 海洛结束 */
+
+
+/* start开始 */
+.title-wrapper{
+    height: 200px;
+    margin-bottom: 40px;
+}
+.title-wrapper a{
+    display: block
+}
+.title-wrapper .wrapper{
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.title-wrapper .title-wrapper-1{
+    position: relative;
+    width: 32%;
+    height: 200px;
+    float: left;
+}
+.title-wrapper .title-wrapper-2{
+    position: relative;
+    width: 32%;
+    height: 200px;
+    float: left;
+    margin: 0 23px;
+}
+.title-wrapper .title-wrapper-3{
+    position: relative;
+    width: 32%;
+    height: 200px;
+    float:right;
+}
+.jijian{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 32px;
+    transform: translateY(-50%);
+}
+.jijian p {
+    font-size: 20px;
+    font-family: 'Franklin Gothic';
+    font-weight: bold;
+}
+/* start结束 */
+
+/* hot开始 */
+div.hot{
+    height: 144px;
+    background: #fff;
+    margin-bottom:20px;
+    padding: 36px 70px;
+    box-sizing: border-box;
+}
+.hot .hot1{
+    width: 272px;
+    height: 72px;
+    float: left;
+    /* background-color: #333; */
+    padding: 12px 30px;
+    box-sizing: border-box
+}
+.hot .hot2{
+    width: 272px;
+    height: 72px;
+    float: left;
+    /* background-color: #f40; */
+    margin: 0 120px;
+    padding: 12px 30px;
+    box-sizing: border-box
+}
+.hot .hot3{
+    width: 272px;
+    height: 72px;
+    float: right;
+    /* background-color: #000; */
+    padding: 12px 30px;
+    box-sizing: border-box
+}
+.hot img{
+    float: left;
+    margin-right: 10px;
+}
+.hot p{
+    font-weight: 900;
+    font-size:18px;
+}
+.hot span{
+    margin-top: 4px;
+    color: rgb(102, 102, 102);
+    font-size:15px;
+}
+/* hot结束 */
+
+/* detail开始 */
+.detail{
+    height: 576px;
+    /* background-color: pink; */
+}
+/* detail-top开始 */
+.hw-1{
+    width: 192px;
+    height: 269px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    padding: 24px 32px;
+    box-sizing: border-box
+}
+div.hw{
+    width: 120px;
+    height: 22px;
+    margin-bottom:10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#myCheck,#myCheck1,#myCheck2,#myCheck3,#myCheck4,
+#myCheck5,#myCheck6,#myCheck7,#myCheck8,#myCheck9{
+    display: none;
+}
+#myCheck + label , #myCheck1 + label , #myCheck2 + label , #myCheck3 + label , #myCheck4 + label ,
+#myCheck5 + label ,#myCheck6 + label ,#myCheck7 + label ,#myCheck8 + label ,#myCheck9+ label{
+    background-color: #eee;
+    border:3px solid #d3d3d3;
+    width:16px;
+    height:16px;
+    display: inline-block;
+    line-height: 6px;
+    box-sizing:border-box;
+    float: left;
+    margin:3px;
+}
+#myCheck:checked + label , #myCheck1:checked + label , #myCheck2:checked + label , #myCheck3:checked + label , #myCheck4:checked + label,
+#myCheck5:checked + label , #myCheck6:checked + label ,#myCheck7:checked + label ,#myCheck8:checked + label ,#myCheck9:checked + label {
+    border:3px solid rgb(234, 67, 53);
+    background: rgb(234, 67, 53);
+}
+#myCheck:checked + label:after , #myCheck1:checked + label:after , #myCheck2:checked + label:after , #myCheck3:checked + label:after , #myCheck4:checked + label:after,
+#myCheck5:checked + label:after ,#myCheck6:checked + label:after ,#myCheck7:checked + label:after ,#myCheck8:checked + label:after ,#myCheck9:checked + label:after{
+    content:"\2714";
+    color: #fff;
+    font-size: 12px;
+}
+.lucency{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0px 16px 16px 0px;
+}
+.charac{
+    width: 384px;
+    height: 28px;
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translatey(-50%);
+    z-index: 1;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
+    font-weight: 700;
+}
+.hotspot{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 64px;
+    height: 32px;
+    font-family: Futura;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgb(255, 209, 0);
+    position: absolute;
+    left: -10px;
+    top:10px;
+}
+.hotspot1{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 64px;
+    height: 32px;
+    font-family: Futura;
+    font-weight: bold;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: -10px;
+    top:10px;
+}
+.fillet{
+    border-radius: 0 15px 15px 0;
+    overflow: hidden;
+    display: block ;
+    width: 384px;
+    height: 269px;
+}
+.detail .detail-top{
+    width: 100%;
+    height: 269px;
+    /* background-color: skyblue; */
+    padding: 10px 0;
+}
+.detail .detail-top .detail-top-1,.detail .detail-top .detail-top-2,.detail .detail-top .detail-top-3{
+    width: 32%;
+    float: left;
+    height: 269px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.detail .detail-top .detail-top-1{
+      background-color: #333;
+
+}
+.detail .detail-top .detail-top-2,.detail .detail-top .detail-top-3{
+      margin-left:  24px;
+
+}
+.detail .detail-top .detail-top-2 .lucency::after ,.detail .detail-top .detail-top-3 .lucency::after{
+    content: '';
+    width: 14px;
+    height: 24px;
+    background: url(../img/shouye/标签.png);
+    position: absolute;
+    right:20px;
+    top: 0px;
+}
+/* .detail .detail-top .detail-top-3{
+
+   display: block ;
+} */
+/* detail-top结束 */
+
+/* detail-bottom开始 */
+div.detail-bottom{
+    height:869px;
+    margin-top:10px;
+}
+.detail-bottom .detail-bottom-left,.detail-bottom .detail-bottom-center,.detail-bottom .detail-bottom-right{
+    width: 32%;
+    float: left;
+    height: 869px;
+}
+/* .detail-bottom .detail-bottom-left{
+    background-color: #333;
+
+} */
+.detail-bottom .detail-bottom-center{
+    /* background-color: #000; */
+    margin: 0 24px;
+}
+/* .detail-bottom .detail-bottom-right{
+    background-color: #f40;
+} */
+/* detail-bottom结束 */
+/* detail结束 */
+div.design1{
+    height: 56px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+div.design2{
+    height: 700px;
+    /* background: pink; */
+
+}
+div.design2 .design2-top{
+    height: 324px;
+    margin-bottom: 20px;
+}
+div.design2 .design2-top img{
+    width: 100%;
+    height: 264px;
+}
+div.design2 .design2-top p{
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    line-height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /* margin-top: -4px; */
+    padding: 16px 24px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+}
+.design2 .design2-top .design2-top-1,.design2 .design2-top .design2-top-2,.design2 .design2-top .design2-top-3{
+    float: left;
+    width: 32%;
+    height: 324px;
+    transition: 0.5s;
+    position: relative;
+    /* background: skyblue */
+}
+.design2 .design2-top .design2-top-1:hover,.design2 .design2-top .design2-top-2:hover,.design2 .design2-top .design2-top-3:hover{
+      box-shadow:  0 4px 16px rgba(0, 0, 0, 0.3);
+ 
+}
+.design2 .design2-top .design2-top-2{
+    margin: 0 24px;
+}
+div.btn{
+    height: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+div.btn button{
+    position: relative;
+    white-space: nowrap;
+    word-break: keep-all;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    width: auto;
+    height: 40px;
+    color: rgb(31, 31, 31);
+    padding: 0px 24px;
+    background: transparent;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(31, 31, 31);
+    border-image: initial;
+    transition: all 0.3s ease 0s;
+    outline: 0px !important;
+}
+.carousel  ul {
+    width: 4800px;
+    height: 272px;
+    list-style: none;
+    position: absolute;
+  }
+
+  .carousel ul li {
+    float: left;
+  }
+
+  .carousel .box ul li  {
+    width: 1200px;
+    height: 272px;
+  }
+
+  .carousel ol {
+    list-style: none;
+    /* width: 180px; */
+    height: 20px;
+    /* background: rgba(255, 255, 255, 0.5); */
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+
+  }
+
+  .carousel ol li {
+    float: left;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    text-align: center;
+    line-height: 12px;
+    margin: 0 8px;
+    margin-top: 4px;
+    font-size: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+  }
+  .carousel  ol li.current {
+    background: red;
+  }
+
+  /* 箭头部分 */
+
+  
+  .carousel  .arrow {
+    display: none;
+  }
+
+  .carousel .left,.right {
+    width: 30px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 60px;
+    font-size: 34px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .carousel  .left {
+    left: 0;
+  }
+  .carousel  .right {
+    right: 0;
+  }
+/*section区域开始 */ 

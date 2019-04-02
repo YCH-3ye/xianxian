@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户登录 - 通行证 - 站酷</title>
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/resetz.css">
+    <link rel="stylesheet" href="./css/user-login.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/drag.js"></script>
+    <style type="text/css">
+        .slidetounlock{
+            font-size: 12px;
+            background:-webkit-gradient(linear,left top,right top,color-stop(0,#4d4d4d),color-stop(.4,#4d4d4d),color-stop(.5,#fff),color-stop(.6,#4d4d4d),color-stop(1,#4d4d4d));
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            -webkit-animation:slidetounlock 3s infinite;
+            -webkit-text-size-adjust:none
+        }
+        @-webkit-keyframes slidetounlock{0%{background-position:-200px 0} 100%{background-position:200px 0}}
+
+    </style>
+
+
+</head>
+<body>
+    <div class="th clearfix"><a href="javascript:void(0)"></a><span>通行证</span></div>
+    <div class="login_log"> <a href="javascript:void(0)"><img src="img/info/zcool_hellorf_logo.png" alt=""></a><br>
+        <span>一站式正版视觉内容提供商</span>
+    </div>
+    <div class="main_body">
+        <div class="login-swich">
+            <div class="icon1"></div>
+            <div class="icon2"></div>
+        </div>
+        <div class="yin">
+        <div class="head clearfix">
+            <div class="mima current fl">密码登录</div>
+            <div class="dx fl">短信登录</div>
+        </div>
+        <div class="password clearfix">
+            <input type="text" id="input1" placeholder="手机号/邮箱">
+            <input type="text" id='input2' placeholder="密码">
+            <div id="wrapper" style="display:none">
+                <div id="drag">
+                    <div class="drag_bg"></div>
+                    <div class="drag_text slidetounlock" onselectstart="return false;" unselectable="on">
+                        请按住滑块，拖动到最右边
+                    </div>
+                    <div class="handler handler_bg"></div>
+                </div>
+            </div>
+
+            
+            <div class="load">登录</div>
+            <label><input type="checkbox" id="input3">下次自动登录</label>
+            <div class="wma"><a href="javascript:void(0)">忘记密码</a> &nbsp; | &nbsp; <a href="javascript:void(0)">注册</a></div>
+        </div>
+        <div class="login-box">
+            <p>第三方账号登录</p>
+            <a class="wx" href="javascript:void(0)"></a>
+            <a class="wb" href="javascript:void(0)"></a>
+            <a class="qq" href="javascript:void(0)"></a>
+        </div>
+    </div>
+    <div class="quick">
+        <div class="weiload">微信二维码登录</div>
+        <div class="erweima">
+            <img src="img/info/erweima.jpg" alt="erweima">
+        </div>
+        <div class="kuzhan">
+            <p>请使用微信扫描二维码登录</p>
+            <p>"站酷"</p>
+        </div>
+        <div class="mizhuce">
+            <a href="javascript:void(0)">密码登录</a> 
+            &nbsp;|&nbsp;
+            <a href="javascript:void(0)">注册新账号</a>
+        </div>
+    </div>
+    </div>
+    <div class="img-y"><a href="javascript:void(0)">图片来自站酷海洛</a></div>
+    <footer>
+        <p class="p1">京ICP备11017824号-4 / 京ICP证130164号 北京市公安局朝阳分局备案编号:110105000501</p>
+        <p>Copyright © 2016-2017 ZCOOL 中文 English</p>
+    </footer>
+</body>
+    <script>
+        $('#drag').drag();
+        var wrapper = document.querySelector('#wrapper');
+        var mima = document.querySelector('.mima');
+        var dx = document.querySelector('.dx');
+        dx.onclick = function(){
+            this.className = 'current dx fl';
+            this.onmouseout = null;
+            mima.className = 'mima fl';
+            mima.onmouseout = function(){
+                this.className = 'mima fl';
+            }
+            input1.placeholder = '请输入手机号';
+            input2.style.display = 'none';
+            wrapper.style.display = 'block';
+        }
+        dx.onmouseover = function(){
+            this.className = 'current dx fl';
+        }
+        dx.onmouseout = function(){
+            this.className = 'dx fl';
+        }
+        mima.onclick = function(){
+            this.className = 'current mima fl';
+            this.onmouseout = null;
+            dx.className = 'dx fl';
+            dx.onmouseout = function(){
+                this.className = 'dx fl';
+            }
+            input1.placeholder = '手机号/邮箱';
+            input2.style.display = 'block';
+            wrapper.style.display = 'none';
+        }
+        mima.onmouseover = function(){
+            this.className = 'current mima fl';
+        }
+        mima.onmouseout = function(){
+            if(dx.className == 'current dx fl'){
+            this.className = 'mima fl';
+
+            }
+        }
+
+        var input1 = document.querySelector('#input1');
+        var input2 = document.querySelector('#input2');
+        var dl = document.querySelector('.load');
+        input1.onfocus = function(){
+            this.style.background = '#fff';
+        }
+        input1.onblur = function(){
+            this.style.background = '#f4f4f4';
+        }
+        input2.onfocus = function(){
+            this.style.background = '#fff';
+        }
+        input2.onblur = function(){
+            this.style.background = '#f4f4f4';
+        }
+        input2.onkeyup = function(){
+        if(input1.value.length != 0 && input2.value.length != 0){
+            dl.style.background = '#FF6555';
+            dl.style.color = '#fff';
+            dl.style.cursor = 'pointer';
+        }
+        if(input1.value.length == 0 || input2.value.length == 0){
+            dl.style.background = '#f4f4f4';
+            dl.style.color = '#999999';
+            dl.style.cursor = 'auto';
+        }
+        }
+        input1.onkeyup = function(){
+        if(input1.value.length != 0 && input2.value.length != 0){
+            dl.style.background = '#FF6555';
+            dl.style.color = '#fff';
+            dl.style.cursor = 'pointer';
+        }
+        if(input1.value.length == 0 || input2.value.length == 0){
+            dl.style.background = '#f4f4f4';
+            dl.style.color = '#999999';
+            dl.style.cursor = 'auto';
+        }
+        }
+        var loginSwich = document.querySelector('.login-swich');
+        var icon1 = document.querySelector('.login-swich .icon1');
+        var icon2 = document.querySelector('.login-swich .icon2');
+        var mainBody = document.querySelector('.main_body .yin');
+        var quick = document.querySelector('.main_body .quick');
+        var index = 0;
+        loginSwich.onclick = function(){
+            index++;
+            if(index%2 == 0){
+                icon1.style.display = 'block';
+                mainBody.style.display= 'block';
+                quick.style.display = 'none';
+            }else{
+                icon1.style.display = 'none';
+                mainBody.style.display = 'none';
+                quick.style.display = 'block';
+            }
+        }
+
+    
+    </script>
+</html>

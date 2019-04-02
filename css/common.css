@@ -1,0 +1,246 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+ul,
+ol {
+	list-style: none;
+}
+/* a的简写方式 */
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:hover {
+	color: #f40;
+}
+/* 因为input默认的边框是2像素 所以将它换成1像素 */
+input {
+	border: 1px solid #ccc;
+}
+
+body {
+	font: 14px/1.5 'microsoft yahei';
+    color: #333;
+}
+
+/*
+	版心公共类
+*/
+.w1200 {
+	width: 1200px;
+	margin: 0 auto;
+}
+/*
+	清除浮动 重点
+*/
+.clearfix:before,
+.clearfix:after {
+	content: '';
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+body{
+    background-color: #f7f7f7;
+
+ 
+}
+/* 头部区域 */
+.retrun-top{
+    position: fixed;
+    right: 32px;
+    bottom: 80px;
+    z-index: 11;
+    display: none;
+}
+.h{
+    width: 100%;
+    height: 56px;
+    background: #fff;
+    position:fixed;
+    /* display: block; */
+    z-index: 10;
+   
+}
+/* logo 部分*/
+.l{
+    height: 56px;
+    width:200px;
+    /* background: pink; */
+    padding-left:30px ;
+}
+.l img{
+    margin-top : 15px;
+}
+/* 中间部分 */
+.center1{
+    height: 100%;
+    /* background-color: skyblue; */
+    text-align: center;
+    /* line-height: 56px; */
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top:0px;
+}
+.center1 a {
+    font-size: 20px;
+    height: 37px;
+    /* font-weight: 700; */
+    display: inline-block;
+    margin: 0 25px;
+    margin-top:15px;
+}
+.h .center1 .current{
+    font-weight: 700;
+    border-bottom:4px solid red;
+
+}
+/* 右边部分 */
+.h .r{
+     width: 200px;
+     height: 100%;
+     /* background-color: pink; */
+     line-height: 56px;
+     position: absolute;
+     right: 0;
+     top: 0;
+     
+}
+.h .r li{
+    float: left;
+    margin:0 10px;
+}
+/* 底部区域 */
+.f{
+    width: 100%;
+    height: 500px;
+    background: url('../img/background.png');
+    /* margin-top:20px; */
+    
+}
+.f-2{
+    height: 500px;
+    /* background-color: pink; */
+    position: relative;
+}
+.f-3{
+    width: 177px;
+    height: 295px;
+    /* background-color: skyblue; */
+    position: absolute;
+    left:0px;
+    top:80px;
+}
+.f-logo{
+    margin-top: 60px;
+}
+.f-4{
+    width: 640px;
+    /* height: 310px; */
+    float:right;
+}
+.f-4 dl{
+    float: left;
+    margin: 0 25px;
+    margin-top: 80px;
+
+}
+.point::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background:yellow;
+    position: absolute;
+    left:-14px;
+    top:50%;
+    transform: translateY(-50%)
+}
+.f-4 dl dt a{
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+}
+.f-4 dl dd{
+    margin: 10px 0 ;
+}
+.f-4 dl dd a{
+    font-size:16px;
+    color: #ccc
+}
+.f-4 dl dd a:hover{
+    color: #fff
+}
+.f-4 a{
+    color:#fff
+}
+.f-5{
+    position: relative;
+}
+.f-5 img{
+    position: absolute;
+    left: 0px;
+    top:35px;
+}
+.f-5 p{
+color: #ccc;
+position: absolute;
+left: 0px;
+top: 115px;
+}
+.f-2 .f-6{
+    color: #ccc;
+    width: 480px;
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    bottom: 24px;
+    font-size: 12px;
+}
+.f-2 .f-6 a{
+    color: #ccc;
+    font-size: 12px;
+}
+.f-2 .f-6 a:hover{
+    color: #fff
+}
+.f-2 .f-7{
+    width: 195px;
+    position: absolute;
+    left:510px;
+    bottom: 24px;
+    vertical-align: middle;
+}
+.f-2 .f-7 a{
+    color: #ccc;
+    font-size:12px;
+}
+.f-2 .f-7 a:hover{
+    color:#fff
+}
+.f-2 .f-8{
+    width: 241px;
+    color: #ccc;
+    font-size: 12px;
+    position: absolute;
+    left: 730px;
+    bottom: 27px;
+}
+.f-2 .f-9{
+   width: 148px;
+   position: absolute;
+   left: 1000px;
+   bottom: 24px;
+}
+.f-2 span a:hover{
+    color: #fff
+}
+/* 底部背景色 */
+.f-1{
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0,0,0,0.8)
+}

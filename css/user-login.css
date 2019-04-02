@@ -1,0 +1,274 @@
+body{
+    background: url(../img/info/login-hellorf-ground.jpg) 0 0 no-repeat;
+    background-size: 118%;
+    text-align: center;
+    height: 885px;
+}
+.th{
+    width: 1200px;
+    display: inline-block;
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+}
+.th a{
+    display: inline-block;
+    background: url(../img/info/zcool_logo.png) 0 0 no-repeat;
+    height: 24px;
+    width: 137px;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+    margin-right: 10px;
+    background-size: auto 24px;
+    vertical-align: middle;
+    float: left;
+}
+.th span{
+    user-select: none;
+    float: left;
+}
+.login_log{
+    padding: 20px 0 30px;
+}
+.login_log a img{
+    margin-bottom: 10px;
+}
+.login_log span{
+    font-size: 18px;
+    line-height: 32px;
+    color: #fff;
+    user-select: none;
+}
+.main_body{
+    width: 400px;
+    height: 500px;
+    background: #ffffff;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius:1%;
+    box-shadow: 0 1px 12px 0 rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    padding: 32px 30px;
+    overflow: hidden;
+}
+.main_body .head {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.quick{
+    display: none;
+}
+.quick .weiload{
+    font-size: 16px;
+    font-weight: 500;
+    color: #282828;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;
+    user-select: none;
+}
+.quick .erweima img{
+    width: 216px;
+    height: 216px;
+    border: 1px solid transparent;
+    margin-top: 15px;
+    user-select: none;
+}
+.quick .mizhuce{
+    margin-top: 56px;
+}
+.quick .mizhuce a:hover{
+    color: #999999;
+}
+
+
+
+
+.head .mima{
+    cursor: pointer;
+    font-size: 16px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+.head .dx{
+    cursor: pointer;
+    font-size: 16px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+
+
+.current{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.password{
+    margin-top: 45px;
+    padding-bottom: 8px;
+    /* background: pink; */
+}
+.password #input1,#input2{
+    width: 298px;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid #dddddd;
+    color: #666666;
+    background: #f4f4f4;
+    text-rendering: auto;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.password .load{
+    width: 340px;
+    height: 42px;
+    background: #f4f4f4;
+    user-select: none;
+    border-radius: 5px;
+    font-size: 17px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+.password label{
+    width: 105px;
+    height: 19px;
+    float: left;
+    color: #000;
+}
+.password #input3{
+    width: 13px;
+    height: 13px;
+    margin-right: 8px;
+    color: yellow;
+}
+.password .wma{
+    text-align: right;
+}
+.password .wma a{
+    font-size: 14px;
+    color: #999999;
+}
+.password .wma a:hover{
+    color: #000;
+}
+.login-box{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.login-box p{
+    margin-bottom: 15px;
+    color: #999999;
+}
+.login-box a{
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+.login-box .wx{
+    background: #dddddd url(../img/info/wechat.png) center no-repeat;
+}
+.login-box .wx:hover{
+    background-color: #58BC46;
+}
+.login-box .wb{
+    margin: 0 20px;
+    background: #dddddd url(../img/info/weibo.png) center no-repeat;
+}
+.login-box .wb:hover{
+    background-color: #E90E24;
+}
+.login-box .qq{
+    background: #dddddd url(../img/info/qq.png) center no-repeat;
+}
+.login-box .qq:hover{
+    background-color: #3CAAE3;
+}
+.main_body .login-swich{
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.main_body .login-swich .icon1{
+    width: 53px;
+    height: 53px;
+    background: url(../img/info/wx_hellorf_l.png) center no-repeat;
+}
+.main_body .login-swich .icon2{
+    width: 53px;
+    height: 53px;
+    background: url(../img/info/web_hellorf_l.png) center no-repeat;
+}
+    
+#drag{
+    position: relative;
+    background-color: #e8e8e8;
+    width: 340px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#drag .handler{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 32px;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+.handler_bg{
+    background: #fff url("../img/info/slider.png") no-repeat center;
+}
+.handler_ok_bg{
+    background: #fff url("../img/info/complet.png") no-repeat center;
+}
+#drag .drag_bg{
+    background-color: #7ac23c;
+    height: 34px;
+    width: 0px;
+}
+#drag .drag_text{
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    color:#9c9c9c;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -o-user-select:none;
+    -ms-user-select:none;
+
+    font-size: 12px;     
+}
+
+
+
+.img-y{
+    margin-top: 20px;
+}
+.img-y a{
+    color: #fff;
+    font-size: 14px;
+}
+footer{
+    margin-top: 32px;
+    font-size: 12px;
+    color: #ffffff;
+}
+footer .p1{
+    margin-bottom: 8px;
+}

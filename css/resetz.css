@@ -1,0 +1,93 @@
+/* body {
+    background-color: #fff !important;
+} */
+a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+img,button ,input {
+    border: none;
+}
+img {
+	vertical-align: top;
+}
+em, i, u {
+    font-style: normal;
+}
+s {
+    text-decoration: none;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+/* 清除浮动公共类 */
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+body {
+    font: 14px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #999999;
+    background-color: #F0F4F5;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #c81623;
+}
+.w1100 {
+    width: 1100px;
+    margin: 0 auto;
+    clear: both;
+}
+/* 单行文本超出省略号显示 */
+.txt-cut {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.m-color {
+    color: #c81623;
+}
+.mt-24 {
+    margin-top: 24px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.ml-t{
+    margin-top: 15px !important;
+}
+.iconfont{
+    vertical-align: middle;
+}
+input{
+    outline: none;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+.f14{
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 8px;
+}

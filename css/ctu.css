@@ -1,0 +1,974 @@
+body{
+    background: #fff !important; 
+}
+.banner{
+    width: 100%;
+    height: 674px;
+    background: url(../images/banner.gif) 0 0 no-repeat;
+    background-size: 100%;
+    display: table;
+    position: relative;
+}
+.banner #zzsc{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top:65%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav{
+    margin-top: 40px;
+}
+.nav .navbar{
+    text-align: center;
+    position: relative;
+}
+.nav ul{
+    display: inline-block;
+}
+.nav ul li{
+    float: left;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+} 
+.nav ul .tip:after {    
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom:  7px solid pink;
+    content: "";
+    position: absolute;
+    top: 178%;
+    left: 42%;
+ }
+ .nav ul li:hover:after {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom:  7px solid lightblue;
+    content: "";
+    position: absolute;
+    top: 178%;
+    left: 42%;
+ }
+.nav .navbar:after{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    top: 50px;
+    left: 50%;
+    margin-left: -500px;
+    height: 2px;
+    background: #ccc;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.pic{
+    /* height: 3200px; */
+    /* background: pink; */
+    margin-top: 60px;
+    display: none;
+}
+.girl{
+    display: block;
+}
+.girl .plan1{
+    height: 300px;
+    /* background: blue; */
+}
+.girl .plan1 .p1-l{
+    width: 400px;
+    height: 300px;
+    /* background: red; */
+    background: url(../images/girl/1.png);
+    background-size: 100% 100%;
+}
+
+.girl .plan1 .p1-m{
+    width: 360px;
+    height: 300px;
+    /* background: green; */
+    margin: 0 20px;
+    background: url(../images/girl/2.png);
+    background-size: 100% 100%;
+}
+.girl .plan1 .p1-r{
+    width: 400px;
+    height: 300px;
+    /* background: yellow; */
+    background: url(../images/girl/3.png);
+    background-size: 100% 100%;
+}
+
+.girl .plan2{
+    height: 400px;
+    /* background: blue; */
+    margin-top: 20px;
+}
+.girl .plan2 .p2-l{
+    width: 400px;
+    height: 400px;
+    /* background: red; */
+    background: url(../images/girl/4.png);
+    background-size: 100% 100%;
+}
+.girl .plan2 .p2-m{
+    width: 360px;
+    height: 400px;
+    /* background: green; */
+    margin: 0 20px;
+    background: url(../images/girl/5.png);
+    background-size: 100% 100%;
+}
+.girl .plan2 .p2-r{
+    width: 400px;
+    height: 400px;
+    /* background: yellow; */
+    background: url(../images/girl/6.png);
+    background-size: 100% 100%;
+}
+
+.girl .plan3{
+    height: 300px;
+    /* background: blue; */
+    margin-top: 20px;
+}
+.girl .plan3 .p3-l{
+    width: 780px;
+    height: 300px;
+    /* background: red; */
+    margin-right: 20px;
+    background: url(../images/girl/7.png);
+    background-size: 100% 100%;
+}
+.girl .plan3 .p3-r{
+    width: 400px;
+    height: 300px;
+    /* background: yellow; */
+    background: url(../images/girl/8.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+
+}
+.girl .plan4{
+    height: 400px;
+    /* background: blue; */
+    margin-top: 20px;
+}
+.girl .plan4 .p4-l{
+    width: 780px;
+    height: 350px;
+    /* background: red; */
+    margin-right: 20px;
+    background: url(../images/girl/9.png);
+    background-size: 100% 100%;
+}
+.girl .plan4 .p4-r{
+    width: 400px;
+    height: 350px;
+    background: #ff8e84;
+    text-align: center;
+    line-height: 400px;
+}
+.girl .plan4 .p4-r .p4-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+/* .pic{
+    font-size: 100px;
+} */
+.animals .plan1{
+    height: 330px;
+    /* background: lime; */
+}
+.animals .plan2{
+    /* height: 600px; */
+    /* background: yellowgreen; */
+    margin: 20px 0;
+}
+.animals .plan3{
+    height: 330px;
+    /* background: gold; */
+}
+.animals .plan1 .p1l{
+    height: 330px;
+    width: 390px;
+    background: url(../images/animals/10.png);
+    background-size: 100% 100%;
+}
+.animals .plan1 .p1m{
+    width: 380px;
+    height: 330px;
+    margin: 0 20px;
+    background: url(../images/animals/11.png);
+    background-size: 100% 100%;
+}
+.animals .plan1 .p1r{
+    width: 390px;
+    height: 330px;
+    background: url(../images/animals/12.png);
+    background-size: 100% 100%;
+}
+
+.animals .plan2 .p2t{
+    height: 300px;
+    width: 790px;
+    /* background: red; */
+}
+.animals .plan2 .p2b{
+    height: 220px;
+    width:790px;
+    /* background: blue; */
+    margin-top: 20px;
+}
+.animals .plan2 .p2r{
+    height: 540px;
+    width: 390px;
+    /* background: coral; */
+    margin-left: 20px;
+    background: url(../images/animals/17.png);
+    background-size: 100% 100%;
+}
+.animals .plan2 .p2t .p2tl{
+    width: 390px;
+    height: 300px;
+    background: url(../images/animals/13.png);
+    background-size: 100% 100%;
+
+}
+.animals .plan2 .p2t .p2tr{
+    width: 380px;
+    height: 300px;
+    margin-left: 20px;
+    background: url(../images/animals/14.png);
+    background-size: 100% 100%;
+
+}
+.animals .plan2 .p2b .p2bl{
+    width: 390px;
+    height: 220px;
+    background: url(../images/animals/15.png);
+    background-size: 100% 100%;
+}
+.animals .plan2 .p2b .p2br{
+    width: 380px;
+    height: 220px;
+    margin-left: 20px;
+    background: url(../images/animals/16.png);
+    background-size: 100% 100%;
+}
+.animals .plan3 .p3l{
+    width: 790px;
+    height: 330px;
+    background: url(../images/animals/18.png);
+    background-size: 100% 100%;
+    margin-right: 20px;
+} 
+.animals .plan3 .p3r{
+    width: 390px;
+    height: 330px;
+    background: #c1e4e8;
+    text-align: center;
+    line-height: 330px;
+}
+.animals .plan3 .p3r .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
+.food .p3t{
+    /* height: 1200px; */
+    width: 100%;
+}
+.food .p3l{
+    /* height: 900px; */
+    width: 400px;
+    /* background: lime; */
+}
+.food .p3m{
+    /* height: 900px; */
+    width: 360px;
+    /* background: palegreen; */
+    margin: 0 20px;
+}
+.food .p3r{
+    /* height: 900px; */
+    width: 400px;
+    /*background: chocolate;*/
+}
+.food .p3b{ 
+    width: 100%;
+    /* height: 400px; */
+    /* background: gold; */
+    margin-top: 20px;
+}
+.food .p3l .p3l1{
+    width: 400px;
+    height: 420px;
+    background: url(../images/food/19.png);
+    background-size: 100% 100%;
+}
+.food .p3l .p3l2{
+    width: 400px;
+    height: 350px;
+    background: url(../images/food/22.png);
+    background-size: 100% 100%;
+    margin: 20px 0;
+}
+.food .p3l .p3l3{
+    width: 400px;
+    height: 200px;
+    background: url(../images/food/23.png);
+    background-size: 100% 100%;
+}
+
+.food .p3m .p3m1{
+    width: 360px;
+    height: 420px;
+    background: url(../images/food/20.png);
+    background-size: 100% 100%;
+}
+.food .p3m .p3m2{
+    width: 360px;
+    height: 300px;
+    background: url(../images/food/24.png);
+    background-size: 100% 100%;
+    margin: 20px 0;
+}
+.food .p3m .p3m3{
+    width: 360px;
+    height: 250px;
+    background: url(../images/food/25.png);
+    background-size: 100% 100%;
+}
+
+.food .p3r .p3r1{
+    width: 400px;
+    height: 420px;
+    background: url(../images/food/21.png);
+    background-size: 100% 100%;
+}
+.food .p3r .p3r2{
+    width: 400px;
+    height: 570px;
+    background: url(../images/food/26.png);
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+
+.food .p3b .p3bl{
+    width: 780px;
+    height: 360px;
+    background: url(../images/food/27.png);
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+.food .p3b .p3br{
+    width: 400px;
+    height: 360px;
+    background: #ffdcab;
+    text-align: center;
+    line-height: 360px;
+}
+.food .p3b .p3br .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
+/* 水果 */
+.fruits .plan1{
+    height: 350px;
+    /* background: purple; */
+}
+.fruits .plan2{
+    height: 400px;
+    /* background: purple; */
+    margin: 20px 0;
+}
+
+.fruits .plan3{
+    height: 350px;
+    /* background: purple; */
+}
+.fruits .plan1 .p1l{
+    height: 350px;
+    width: 360px;
+    background:url(../images/fruits/28.png);
+    background-size: 100% 100%;
+}
+.fruits .plan1 .p1m{
+    height: 350px;
+    width: 440px;
+    background:url(../images/fruits/29.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.fruits .plan1 .p1r{
+    height: 350px;
+    width: 360px;
+    background:url(../images/fruits/30.png);
+    background-size: 100% 100%;
+}
+
+.fruits .plan2 .p2l{
+    height: 400px;
+    width: 360px;
+    background:url(../images/fruits/31.png);
+    background-size: 100% 100%;
+}
+.fruits .plan2 .p2m{
+    height: 400px;
+    width: 440px;
+    background:url(../images/fruits/32.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.fruits .plan2 .p2r{
+    height: 400px;
+    width: 360px;
+    background:url(../images/fruits/33.png);
+    background-size: 100% 100%;
+}
+
+.fruits .plan3 .p3l{
+    height: 350px;
+    width: 360px;
+    background:url(../images/fruits/34.png);
+    background-size: 100% 100%;
+}
+.fruits .plan3 .p3m{
+    height: 350px;
+    width: 440px;
+    background:url(../images/fruits/35.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.fruits .plan3 .p3r{
+    height: 350px;
+    width: 360px;
+    background: #ee7d9d;
+    text-align: center;
+    line-height: 350px;
+}
+.fruits .plan3 .p3r .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
+/* 植物 */
+.botany .bot{
+    width: 100%;
+    /* height: 800px; */
+    /* background: purple; */
+}
+.botany .plan3{
+    width: 100%;
+    height: 350px;
+    /* background: gold; */
+    margin-top: 20px;
+}
+.botany .plan1{
+    /* height: 800px; */
+    width: 400px;
+    /* background: greenyellow; */
+}
+.botany .plan2{
+    height: 870px;
+    width: 780px;
+    /* background: greenyellow; */
+    margin-left: 20px;
+}
+.botany .plan1 .p1t{
+    width: 400px;
+    height: 400px;
+    background: url(../images/botany/36.png);
+    background-size: 100% 100%;
+}
+.botany .plan1 .p1b{
+    width: 400px;
+    height: 450px;
+    background: url(../images/botany/37.png);
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+.botany .plan2 .p2t{
+    width: 780px;
+    height: 270px;
+    /* background: blue; */
+}
+.botany .plan2 .p2m{
+    width: 780px;
+    height: 260px;
+    /* background: blue; */
+    margin: 20px 0;
+}
+.botany .plan2 .p2b{
+    width: 780px;
+    height: 300px;
+    /* background: blue; */
+}
+
+.botany .plan2 .p2t .p2tl{
+    width: 460px;
+    height: 270px;
+    background: url(../images/botany/38.png);
+    background-size: 100% 100%;
+}
+.botany .plan2 .p2t .p2tr{
+    width: 300px;
+    height: 270px;
+    background: url(../images/botany/39.png);
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.botany .plan2 .p2m .p2ml{
+    width: 460px;
+    height: 260px;
+    background: url(../images/botany/40.png);
+    background-size: 100% 100%;
+}
+.botany .plan2 .p2m .p2mr{
+    width: 300px;
+    height: 260px;
+    background: url(../images/botany/41.png);
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.botany .plan2 .p2b .p2bl{
+    width: 390px;
+    height: 300px;
+    background: url(../images/botany/42.png);
+    background-size: 100% 100%;
+}
+.botany .plan2 .p2b .p2br{
+    width: 370px;
+    height: 300px;
+    background: url(../images/botany/43.png);
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.botany .plan3 .p3l{
+    width: 810px;
+    height: 350px;
+    background: url(../images/botany/44.png);
+    background-size: 100% 100%;
+    margin-right: 20px;
+}
+
+.botany .plan3 .p3r{
+    height: 350px;
+    width: 370px;
+    background: #02e44d;
+    text-align: center;
+    line-height: 370px;
+}
+.botany .plan3 .p3r .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
+/* 鲜花 */
+.flower .plan1{
+    height: 350px;
+    /* background: purple; */
+}
+.flower .plan2{
+    /* height: 400px; */
+    /* background: purple; */
+    margin: 20px 0;
+}
+
+.flower .plan3{
+    height: 320px;
+    /* background: purple; */
+}
+.flower .plan1 .p1l{
+    height: 350px;
+    width: 410px;
+    background:url(../images/flower/45.png);
+    background-size: 100% 100%;
+}
+.flower .plan1 .p1m{
+    height: 350px;
+    width: 370px;
+    background:url(../images/flower/46.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.flower .plan1 .p1r{
+    height: 350px;
+    width: 380px;
+    background:url(../images/flower/47.png);
+    background-size: 100% 100%;
+}
+
+.flower .plan2 .p2l{
+    height: 450px;
+    width: 410px;
+    background:url(../images/flower/48.png);
+    background-size: 100% 100%;
+}
+.flower .plan2 .p2m{
+    height: 450px;
+    width: 370px;
+    /* background:url(../images/flower/49.png); */
+    /* background-size: 100% 100%; */
+    /* background: teal; */
+    margin: 0 20px;
+}
+.flower .plan2 .p2m .p2mt{
+    height: 250px;
+    width: 370px;
+    background:url(../images/flower/49.png);
+    background-size: 100% 100%;
+    /* background: teal; */
+    /* margin: 0 20px; */
+}
+.flower .plan2 .p2m .p2mb{
+    height: 180px;
+    width: 370px;
+    background:url(../images/flower/50.png);
+    background-size: 100% 100%;
+    /* background: teal; */
+    margin-top:20px;
+}
+.flower .plan2 .p2r{
+    height: 450px;
+    width: 380px;
+    background:url(../images/flower/51.png);
+    background-size: 100% 100%;
+}
+
+.flower .plan3 .p3l{
+    height: 320px;
+    width: 410px;
+    background:url(../images/flower/52.png);
+    background-size: 100% 100%;
+}
+.flower .plan3 .p3m{
+    height: 320px;
+    width: 370px;
+    background:url(../images/flower/53.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.flower .plan3 .p3r{
+    height: 320px;
+    width: 380px;
+    background: #e1bef1;
+    text-align: center;
+    line-height: 320px;
+}
+.flower .plan3 .p3r .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
+
+/* 城市 */
+.city .plan1{
+    height: 330px;
+    /* background: lime; */
+}
+.city .plan2{
+    /* height: 600px; */
+    /* background: yellowgreen; */
+    margin: 20px 0;
+}
+.city .plan3{
+    height: 330px;
+    /* background: gold; */
+}
+.city .plan1 .p1l{
+    height: 330px;
+    width: 390px;
+    background: url(../images/city/54.png);
+    background-size: 100% 100%;
+}
+.city .plan1 .p1m{
+    width: 380px;
+    height: 330px;
+    margin: 0 20px;
+    background: url(../images/animals/11.png);
+    background-size: 100% 100%;
+}
+.city .plan1 .p1r{
+    width: 390px;
+    height: 330px;
+    background: url(../images/city/61.png);
+    background-size: 100% 100%;
+}
+
+.city .plan2 .p2t{
+    height: 300px;
+    width: 790px;
+    /* background: red; */
+}
+.city .plan2 .p2b{
+    height: 220px;
+    width:790px;
+    /* background: blue; */
+    margin-top: 20px;
+}
+.city .plan2 .p2r{
+    height: 540px;
+    width: 390px;
+    /* background: coral; */
+    margin-left: 20px;
+    background: url(../images/city/60.png);
+    background-size: 100% 100%;
+}
+.city .plan2 .p2t .p2tl{
+    width: 390px;
+    height: 300px;
+    background: url(../images/city/57.png);
+    background-size: 100% 100%;
+
+}
+.city .plan2 .p2t .p2tr{
+    width: 380px;
+    height: 300px;
+    margin-left: 20px;
+    background: url(../images/city/58.png);
+    background-size: 100% 100%;
+
+}
+.city .plan2 .p2b .p2bl{
+    width: 390px;
+    height: 220px;
+    background: url(../images/city/59.png);
+    background-size: 100% 100%;
+}
+.city .plan2 .p2b .p2br{
+    width: 380px;
+    height: 220px;
+    margin-left: 20px;
+    background: url(../images/city/56.png);
+    background-size: 100% 100%;
+}
+.city .plan3 .p3l{
+    width: 790px;
+    height: 330px;
+    background: url(../images/city/55.png);
+    background-size: 100% 100%;
+    margin-right: 20px;
+} 
+.city .plan3 .p3r{
+    width: 390px;
+    height: 330px;
+    background: #02d5e4;
+    text-align: center;
+    line-height: 330px;
+}
+.city .plan3 .p3r .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+/* 手绘元素 */
+.shElement .plan1{
+    height: 350px;
+    /* background: purple; */
+}
+.shElement .plan2{
+    /* height: 400px; */
+    /* background: purple; */
+    margin: 20px 0;
+}
+
+.shElement .plan3{
+    height: 320px;
+    /* background: purple; */
+}
+.shElement .plan1 .p1l{
+    height: 350px;
+    width: 410px;
+    background:url(../images/shElement/63.png);
+    background-size: 100% 100%;
+}
+.shElement .plan1 .p1m{
+    height: 350px;
+    width: 370px;
+    background:url(../images/shElement/64.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.shElement .plan1 .p1r{
+    height: 350px;
+    width: 380px;
+    background:url(../images/shElement/65.png);
+    background-size: 100% 100%;
+}
+
+.shElement .plan2 .p2l{
+    height: 450px;
+    width: 410px;
+    background:url(../images/shElement/66.png);
+    background-size: 100% 100%;
+}
+.shElement .plan2 .p2m{
+    height: 450px;
+    width: 370px;
+    margin: 0 20px;
+}
+.shElement .plan2 .p2m .p2mt{
+    height: 250px;
+    width: 370px;
+    background:url(../images/shElement/67.png);
+    background-size: 100% 100%;
+    /* background: teal; */
+    /* margin: 0 20px; */
+}
+.shElement .plan2 .p2m .p2mb{
+    height: 180px;
+    width: 370px;
+    background:url(../images/shElement/68.png);
+    background-size: 100% 100%;
+    /* background: teal; */
+    margin-top:20px;
+}
+.shElement .plan2 .p2r{
+    height: 450px;
+    width: 380px;
+    background:url(../images/shElement/69.png);
+    background-size: 100% 100%;
+}
+
+.shElement .plan3 .p3l{
+    height: 320px;
+    width: 410px;
+    background:url(../images/shElement/70.png);
+    background-size: 100% 100%;
+}
+.shElement .plan3 .p3m{
+    height: 320px;
+    width: 370px;
+    background:url(../images/shElement/71.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.shElement .plan3 .p3r{
+    height: 320px;
+    width: 380px;
+    background: #b3e2fd;
+    text-align: center;
+    line-height: 320px;
+}
+.shElement .plan3 .p3r .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
+/* 幻想 */
+
+.fantasy .plan1{
+    width: 100%;
+    /* height: 500px; */
+    /* background: gold; */
+}
+.fantasy .plan2{
+    width: 100%;
+    /* height: 1000px; */
+    /* background: gold; */
+    margin: 20px 0;
+}
+.fantasy .plan3{
+    width: 100%;
+    /* height: 500px; */
+    /* background: gold; */
+}
+.fantasy .plan1 .p1l{
+    width: 400px;
+    height: 300px;
+    background: url(../images/fantasy/72.png);
+    background-size: 100% 100%;
+}
+.fantasy .plan1 .p1m{
+    width: 370px;
+    height: 300px;
+    background: url(../images/fantasy/73.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+.fantasy .plan1 .p1r{
+    width: 390px;
+    height: 300px;
+    background: url(../images/fantasy/74.png);
+    background-size: 100% 100%;
+}
+.fantasy .plan2 .p2t .p2tl{
+    width: 790px;
+    height: 310px;
+    background: url(../images/fantasy/75.png);
+    background-size: 100% 100%;
+}
+.fantasy .plan2 .p2t .p2tr{
+    width: 390px;
+    height: 310px;
+    background: url(../images/fantasy/77.png);
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+
+.fantasy .plan2 .p2b .p2bl{
+    width: 790px;
+    height: 310px;
+    background: url(../images/fantasy/76.png);
+    background-size: 100% 100%;
+}
+.fantasy .plan2 .p2b .p2br{
+    width: 390px;
+    height: 310px;
+    background: url(../images/fantasy/78.png);
+    background-size: 100% 100%;
+    margin-left: 20px;
+}
+.fantasy .plan2 .p2b{
+    margin-top: 20px;
+}
+
+.fantasy .plan3 .p3l{
+    width: 400px;
+    height: 300px;
+    background: url(../images/fantasy/79.png);
+    background-size: 100% 100%;
+}
+.fantasy .plan3 .p3m{
+    width: 370px;
+    height: 300px;
+    background: url(../images/fantasy/80.png);
+    background-size: 100% 100%;
+    margin: 0 20px;
+}
+
+.fantasy .plan3 .p3r{
+    width: 390px;
+    height: 300px;
+    background: #61a2b7;
+    text-align: center;
+    line-height: 300px;
+}
+.fantasy .plan3 .p3r .p3-r-c{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.6;
+}
+
+
